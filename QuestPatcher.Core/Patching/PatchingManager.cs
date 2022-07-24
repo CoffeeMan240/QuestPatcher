@@ -192,7 +192,7 @@ namespace QuestPatcher.Core.Patching
                 _logger.Debug("Downloading libunity index for the first time . . .");
                 JsonSerializer serializer = new();
 
-                string data = await client.DownloadStringTaskAsync("https://raw.githubusercontent.com/Lauriethefish/QuestUnstrippedUnity/main/index.json");
+                string data = await client.DownloadStringTaskAsync("https://raw.githubusercontent.com/CoffeeMan240/QMODINDEX/main/index.json");
                 using StringReader stringReader = new(data);
                 using JsonReader reader = new JsonTextReader(stringReader);
 
